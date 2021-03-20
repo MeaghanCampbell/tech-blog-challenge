@@ -28,7 +28,9 @@ router.get('/', (req, res) => {
     ]
   })
     .then(dbPostData => {
-      res.render('homepage', dbPostData[0].get({ plain: true }));
+      // plain: true serializes the data, so we only get the properties we need
+      const posts = dbPostData.map(post => post.get({ plain: true }));
+      res.render('homepage', { posts });
     })
     .catch(err => {
       console.log(err);
