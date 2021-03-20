@@ -1,7 +1,7 @@
 {{#each posts as |post|}}
 <div class="blog-section">
     <div class="blog-header">
-        <h2 href="/posts/{{post.id}}">{{post.title}}</h2>
+        <a href="/post/{{post.id}}">{{post.title}}</a>
         <p>posted by {{post.user.username}} at {{post.created_at}}</p>
     </div>
     <p class="blog-text">

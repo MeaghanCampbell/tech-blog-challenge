@@ -14,10 +14,11 @@
             <nav>
                 <a href="/">Home</a>
                 <a href="/dashboard">Dashboard</a>
-                <!-- if loggedIn -->
-                <a href="/login">Login</a>
-                <!-- else -->
+                {{#if loggedIn}}
                 <button id="logout">Logout</button>
+                {{else}}
+                <a href="/login">Login</a>
+                {{/if}}
             </nav>
             <h1>
                 <a href="/">The Tech Blog</a>
@@ -27,7 +28,9 @@
         <main>
             {{{ body }}}
         </main>
+      {{#if loggedIn}}
       <script src="/js/logout.js"></script>
+      {{/if}}
     </body>
 
 </html>
