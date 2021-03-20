@@ -13,15 +13,6 @@ app.use(express.urlencoded({ extended: true }))
 // connect server to public front end assets
 app.use(express.static(path.join(__dirname, 'public')))
 
-// turn on routes
-app.use(routes)
-
-// connect handlebars
-const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
-
 // connect session
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -35,6 +26,15 @@ const sess = {
   })
 };
 app.use(session(sess));
+
+// connect handlebars
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({});
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+// turn on routes
+app.use(routes)
 
 // start server & listen on port
 sequelize.sync({ force: false }).then(() => {
