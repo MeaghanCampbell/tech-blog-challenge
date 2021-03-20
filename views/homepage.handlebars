@@ -2,7 +2,7 @@
 <div class="blog-section">
     <div class="blog-header">
         <a href="/post/{{post.id}}">{{post.title}}</a>
-        <p>posted by {{post.user.username}} at {{post.created_at}}</p>
+        <p>posted by {{post.user.username}} at {{format_date post.created_at}}</p>
     </div>
     <p class="blog-text">
         {{post.post_content}}
