@@ -140,4 +140,14 @@ form h2 {
     height: 60px;
 }
 
+.edit-link {
+    text-decoration: none;
+    color: #242526;
+    padding: 10px;
+}
+
+.your-posts {
+    padding-left: 30px;
+}
+
 
