@@ -1,0 +1,118 @@
+
+/* main styles */
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #bfd9ba;
+}    
+.wrapper {
+    background-color: #242526;
+    padding: 20px;
+}
+nav {
+    margin-bottom: 40px;
+}
+nav a {
+    color: #bfd9ba;
+    text-decoration: none;
+    font-weight: lighter;
+    padding-bottom: 2px;
+    margin: 20px 20px 0 20px;
+}
+nav a:hover {
+    border-bottom: 2px solid #bfd9ba;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #242526;
+    background-color: #bfd9ba;
+    box-shadow: 5px 5px grey;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* blog section styles */
+.blog-section {
+    margin: 30px;
+    border: 2px solid #242526;
+}
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #242526;
+}
+.blog-section .blog-header h2,
+.blog-section .blog-header p {
+    color: #bfd9ba;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.blog-text {
+    color: #242526;
+    padding: 0 10px;
+}
+
+/* comment section */
+.comment-btn {
+    margin: 0 30px;
+    color: #bfd9ba;
+    background-color: #242526;
+    padding: 7px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.comment-section {
+    margin: 30px;
+    padding: 0 10px;
+    border: 2px solid #242526;
+    color: #242526;
+}
+
+/* sign in section */
+form {
+    margin: 30px;
+    border: 2px solid #242526;
+
+}
+form div {
+    padding: 10px;
+}
+form h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #bfd9ba;
+    background-color: #242526;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.text {
+    text-decoration: none;
+    color: #242526;
+}
+.form-contents div button {
+    color: #bfd9ba;
+    background-color: #242526;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+}
+.form-contents div input {
+    width: 100%;
+    height: 20px;
+}
+
+/* create and update post section */
+
+#update-content, #create-content {
+    height: 60px;
+}
+
+

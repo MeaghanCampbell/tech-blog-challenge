@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <!-- if loggedIn -->
+            <a href="/login">Login</a>
+            <!-- else -->
+            <a href="/logout">Logout</a>
+        </nav>
+        <h1>
+            <a href="/">The Tech Blog</a>
+        </h1>
+    </div>
+
+    <main>
+        <!-- posts -->
+        <div class="blog-section">
+            <div class="blog-header">
+                <h2>Blog post title</h2>
+                <p>date here</p>
+            </div>
+            <p class="blog-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure sed accusamus
+                quasi necessitatibus porro accusantium quod nisi nulla ex ullam amet assumenda suscipit 
+                magnam, nemo ratione. A, excepturi tempore.
+            </p>
+        </div>
+
+        <!-- add comment button -->
+        <button class="comment-btn">+ Add Comment</button>
+
+        <!-- comment section -->
+        <section class="comment-section">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure sed accusamus
+                quasi necessitatibus porro accusantium quod nisi nulla ex ullam amet assumenda suscipit 
+                magnam, nemo ratione. A, excepturi tempore.
+            </p>
+        </section>
+
+        <!-- login section -->
+        <form class="login-form">
+            <h2>Login</h2>
+                <div class="form-contents">
+                    <div>
+                        <label class="text" for="email-login">email:</label>
+                        <input type="text" id="email-login" />
+                    </div>
+                    <div>
+                        <label class="text" for="password-login">password:</label>
+                        <input type="password" id="password-login" />
+                    </div>
+                    <div>
+                        <button id="login" type="submit">login</button>
+                    </div>
+                    <div>
+                        <a href="" class="text" id="logout-instead">signup instead</a>
+                    </div>
+                </div>
+        </form>
+
+        <!-- login section -->
+        <form class="signup-form">
+            <h2>Signup</h2>
+                <div class="form-contents">
+                    <div>
+                        <label class="text" for="username-signup">username:</label>
+                        <input type="text" id="username-signup" />
+                    </div>
+                    <div>
+                        <label class="text" for="email-signup">email:</label>
+                        <input type="text" id="email-signup" />
+                    </div>
+                    <div>
+                        <label class="text" for="password-signup">password:</label>
+                        <input type="password" id="password-signup" />
+                    </div>
+                    <div>
+                        <button type="submit" id="logout">signup</button>
+                    </div>
+                    <div>
+                        <a href="" class="text" id="login-instead">login instead</a>
+                    </div>
+                </div>
+        </form>
+
+        <!-- create new post section -->
+        <form class="create-form">
+            <h2>Create New Post</h2>
+                <div class="form-contents">
+                    <div>
+                        <label class="text" for="create-title">Title</label>
+                        <input type="text" id="create-title" />
+                    </div>
+                    <div>
+                        <label class="text" for="create-content">Content</label>
+                        <input type="text" id="create-content" />
+                    </div>
+                    <div>
+                        <button type="submit" id="create-post">Create Post</button>
+                    </div>
+                </div>
+        </form>
+
+        <!-- update or delete post section -->
+
+        <form class="update-form">
+            <h2>Update Post</h2>
+                <div class="form-contents">
+                    <div>
+                        <label class="text" for="update-title">Title</label>
+                        <input type="text" id="update-title" />
+                    </div>
+                    <div>
+                        <label class="text" for="update-content">Content</label>
+                        <input type="text" id="update-content" />
+                    </div>
+                    <div>
+                        <button type="submit" id="update-post">Update Post</button>
+                    </div>
+                </div>
+        </form>
+
+    </main>
+
+</body>
+
+</html>
