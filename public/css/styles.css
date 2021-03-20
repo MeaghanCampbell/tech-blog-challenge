@@ -14,15 +14,19 @@ body, html {
 nav {
     margin-bottom: 40px;
 }
-nav a {
+nav a, nav button {
     color: #bfd9ba;
     text-decoration: none;
     font-weight: lighter;
     padding-bottom: 2px;
     margin: 20px 20px 0 20px;
+    background-color: #242526;
+    font-size: 18px;
+    border: none;
 }
-nav a:hover {
-    border-bottom: 2px solid #bfd9ba;
+
+nav a:hover, nav button:hover {
+    color: white;
 }
 
 h1 a {
